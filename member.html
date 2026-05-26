@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Member Verification</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="verification-container">
+
+    <div class="verification-card" id="member-card">
+
+      <div class="verification-header">
+        <h1>Eter Event</h1>
+        <p>Member Verification System</p>
+      </div>
+
+      <div class="profile-section">
+
+        <img
+          id="member-photo"
+          src="images/logo.png"
+          alt="Member Photo"
+        >
+
+      </div>
+
+      <div class="member-info">
+
+        <h2 id="member-name">Loading...</h2>
+
+        <p>
+          <strong>Member ID:</strong>
+          <span id="member-id"></span>
+        </p>
+
+        <p>
+          <strong>Role:</strong>
+          <span id="member-role"></span>
+        </p>
+
+        <p>
+          <strong>Phone:</strong>
+          <span id="member-phone"></span>
+        </p>
+
+        <p>
+          <strong>Status:</strong>
+
+          <span id="member-status" class="status-badge">
+          </span>
+        </p>
+        <div style="margin-top: 20px;">
+        <a id="certificate-link"
+            href="#"
+            target="_blank"
+            style="
+                display:none;
+                padding:10px 15px;
+                background:#1d3557;
+                color:white;
+                border-radius:8px;
+                text-decoration:none;
+                margin-right:10px;
+            ">
+            View Certificate
+        </a>
+
+        <a id="download-certificate"
+            href="#"
+            target="_blank"
+            download
+            style="
+                display:none;
+                padding:10px 15px;
+                background:#2a9d8f;
+                color:white;
+                border-radius:8px;
+                text-decoration:none;
+            ">
+            Download
+        </a>
+        </div>
+
+      </div>
+
+      <div class="verification-footer">
+        <p>Verified by Eter Event System</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script src="js/supabase.js"></script>
+
+  <script src="js/member.js"></script>
+
+</body>
+
+</html>
