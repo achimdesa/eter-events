@@ -61,7 +61,7 @@ function generateQRCode() {
   }
 
   const verificationUrl =
-    `http://127.0.0.1:5500/member.html?id=${memberId}`;
+    `https://eter-events.netlify.app/member.html?id=${memberId}`;
 
   QRCode.toCanvas(
 
