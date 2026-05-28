@@ -95,7 +95,7 @@ async function loadMemberProfile() {
     } else {
 
       photoElement.src =
-        "images/default-user.png";
+        "images/logo.png";
     }
 
     // fallback if image fails
@@ -104,7 +104,7 @@ async function loadMemberProfile() {
       this.onerror = null;
 
       this.src =
-        "images/default-user.png";
+        "images/logo.png";
     };
 
     // =========================
