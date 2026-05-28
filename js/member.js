@@ -48,6 +48,9 @@ async function loadMemberProfile() {
     document.getElementById('member-role').textContent =
       data.role || 'N/A';
 
+    document.getElementById('member-course').textContent =
+      data.course || 'N/A';
+
     document.getElementById('member-phone').textContent =
       data.phone || 'N/A';
 

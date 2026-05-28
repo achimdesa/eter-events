@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Register Student</title>
+
+  <link rel="stylesheet"
+        href="css/style.css">
+
+  <style>
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      background: #f4f6f9;
+
+      padding: 30px;
+    }
+
+    .form-container {
+
+      max-width: 600px;
+
+      margin: auto;
+
+      background: white;
+
+      padding: 30px;
+
+      border-radius: 20px;
+
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    input, select, button {
+
+      width: 100%;
+
+      padding: 12px;
+
+      margin-top: 15px;
+
+      border-radius: 10px;
+
+      border: 1px solid #ccc;
+    }
+
+    button {
+
+      background: #1d3557;
+
+      color: white;
+
+      border: none;
+
+      cursor: pointer;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="form-container">
+    
+
+      <img
+        src="images/logo.png"
+        alt="Eter Event Logo"
+        width="50"
+        height="50"
+      >
+       <a href="admin.html" class="nav-btn">
+        <b>Back to Dashboard</b>
+        </a>
+
+
+    <h1>Register Student</h1>
+
+    <input
+      type="text"
+      id="full_name"
+      placeholder="Full Name"
+    >
+
+    <input
+      type="text"
+      id="member_id"
+      placeholder="Member ID"
+    >
+
+    <input
+      type="text"
+      id="phone"
+      placeholder="Phone Number"
+    >
+    <input
+        type="text"
+        id="course"
+        placeholder="Course"
+        />
+
+    <select id="status">
+
+      <option value="active">
+        Active
+      </option>
+
+      <option value="inactive">
+        Inactive
+      </option>
+
+    </select>
+
+    <label>Upload Photo</label>
+
+    <input
+      type="file"
+      id="photo"
+      accept="image/*"
+    >
+
+    <label>Upload Certificate</label>
+
+    <input
+      type="file"
+      id="certificate"
+      accept=".pdf"
+    >
+
+    <button onclick="registerStudent()">
+      Register Student
+    </button>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script src="js/supabase.js"></script>
+
+  <script src="js/register.js"></script>
+
+</body>
+
+</html>
